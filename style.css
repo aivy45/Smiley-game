@@ -69,14 +69,20 @@ body{
 }
 .hwin {
     padding: 0 20px;
-    color: white;
+    color: rgb(227, 71, 71);
     background-color: black;
+    font-size: 23px;
+}
+.win:hover{
+    background:linear-gradient(100deg, black 60%, white 100%);
+    cursor: pointer;
 }
 .pwin {
     padding: 0 20px;
     cursor: pointer;
     color: white;
     background-color: black;
+    font-size: large;
 }
 
 

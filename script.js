@@ -41,6 +41,20 @@ function success(){
    firstCard.removeEventListener('click' , flip); 
    secondCard.removeEventListener('click' , flip);   
    reset();
+
+const winner = document.querySelector(".win");
+if(count>=8)
+{ 
+   winner.innerHTML="";  
+   count=0; 
+   const h3 = document.createElement("h3");
+   h3.classList.add("hwin");
+   const text = document.createTextNode("Congrats you won the game !");
+   h3.appendChild(text);
+   winner.appendChild(h3);
+
+   
+}
 }
 
 function fail(){
@@ -70,20 +84,8 @@ function reset(){
 
 // if win the game
 //pending work 
-const winner = document.querySelector(".win");
-console.log(typeof count);
-if(count==2)
-{ 
-    console.log(count);
-   winner.innerHTML="";  
-   count=0; 
-   const h3 = document.createElement("h3");
-   h3.classList.add("hwin");
-   const text = "Congrats you won the game !";
-   h3.innerText =text;
-//    h3.appendChild(text);
-   winner.appendChild(h3);
-}
+// console.log(count);
+
 
 
 
